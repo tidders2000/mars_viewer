@@ -10,13 +10,46 @@
     <!-- style sheets-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine.css" />
+	<link rel="stylesheet" href="scss/main.css" type="text/css" />
 	
 
  </head>
 
  <body>
-    
+   <div class="container-flex">
+     
+     <div class="row">
+       
+         <div class="col-md-3 item-red">
+          <button id ="increase" onclick="browseImages()" class="btn btn-primary" name="Up"></button>
+           <input type="text" id="sol" value="2000"/>
+            <input type="text" id="cam" value="fhaz"/>
+            <input type="submit" value="Submit" onclick="getData()">
+     
+         </div>
+       
+         <div class="col-md-9 item-orange">
+         <div><img id="mars_pic" src="Assets/images/tv-screen2.png"/>
+         </div>
+         </div>
+     </div>
+  </div>
+  
+  
  <!--scripts-->
+  <!--jquery-->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+  <!--jasmine frameowrk-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine-html.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/boot.js"></script>
+  <!--load code base-->
+  
+     <script type="text/javascript" src="scripts/jscript/javascript.js"></script>
+  <!--load test scripts-->
+      <script type="text/javascript" src="specs/calcspec.js"></script>
+     
  </body>
+ 
 </htnl>

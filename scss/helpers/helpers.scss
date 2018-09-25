@@ -1,0 +1,27 @@
+%reset {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+%center {
+    margin:auto;
+    width:auto;
+}
+
+$colors: (
+    black: black,
+    pink: pink,
+    red: red,
+    green: green,
+    blue: blue,
+    grey: grey,
+    orange: orange,
+    purple: purple
+);
+
+@each $key, $value in $colors{
+    .item-#{$key} {
+        background-color: $value;
+    }
+}
