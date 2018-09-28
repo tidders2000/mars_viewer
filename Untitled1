@@ -50,3 +50,25 @@ function buttonMove(){
       c++
       document.getElementById('mars_pic').src=jobs[c];
   }
+
+
+ var c=0;
+  
+  function addPageImage(photo_holder){
+ 
+    document.getElementById('mars_pic').src=photo_holder[c];
+
+  }
+  function browseImages(photo_holder){
+      c++;
+      document.getElementById('mars_pic').src=photo_holder[c];
+  }
+  
+   addPageImage(photo_holder);  
+     browseImages(photo_holder);
+     
+        var variableHttpString = photo_holder[c];
+        var sec = variableHttpString.substr(0,4);
+        var urity = variableHttpString.substr(5);
+        var security = sec+'s'+urity;
+        console.log(security)

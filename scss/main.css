@@ -22,4 +22,29 @@
 .item-purple {
   background-color: purple; }
 
+body {
+  background-image: url("../Assets/images/alubg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto; }
+
+.tv {
+  background-image: url("../Assets/images/tv-screen2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  margin: auto;
+  width: auto; }
+
+#mars_pic {
+  display: block;
+  padding-top: 100px;
+  width: 100%;
+  height: 540px; }
+
+.info {
+  background-color: white;
+  min-height: 200px; }
+
 /*# sourceMappingURL=main.css.map */
