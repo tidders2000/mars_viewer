@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+.mission-info {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem; }
+
+.tv img, .cam-selector img, .sol-field input, .title img {
+  margin: auto;
+  width: auto; }
+
+body {
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .item-black {
   background-color: black; }
 
@@ -22,29 +35,122 @@
 .item-purple {
   background-color: purple; }
 
+.move-fhaz {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg); }
+
+.move-mast {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.move-nav {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.move-rhaz {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
+.move-pan {
+  -webkit-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg); }
+
+.move-chem {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg); }
+
 body {
   background-image: url("../Assets/images/alubg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: auto; }
 
-.tv {
-  background-image: url("../Assets/images/tv-screen2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 600px;
-  margin: auto;
-  width: auto; }
+.tv img {
+  padding: none;
+  display: block; }
 
 #mars_pic {
   display: block;
-  padding-top: 100px;
-  width: 100%;
-  height: 540px; }
+  width: 100%; }
 
 .info {
   background-color: white;
   min-height: 200px; }
+
+.curiosty-picture {
+  padding-top: 20px; }
+
+.cam-selector img {
+  padding-top: .5rem;
+  display: block; }
+
+.sol-field input {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 20px; }
+
+.mission-info {
+  display: block;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 1px grey;
+  border: 1px solid grey;
+  color: #006400; }
+
+.info-heading {
+  font-weight: 400;
+  text-align: center; }
+
+.title img {
+  padding-top: 5px;
+  display: block;
+  padding-bottom: 20px; }
+
+#mars_pic {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+
+.red {
+  color: red;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(152, 152, 152, 0.43);
+  /*IconColor*/
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(#dceaf2 0%, #dceaf2 100%);
+  background-image: linear-gradient(#dceaf2 0%, #dceaf2 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: solid 2px #b5b5b5; }
+
+.btn .fa {
+  line-height: 60px; }
+
+.btn:active {
+  /*onClick*/
+  background-image: -webkit-linear-gradient(#ffffff 0%, #d6d6d6 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: none; }
 
 /*# sourceMappingURL=main.css.map */

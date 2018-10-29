@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+%computer-font {
+   font-family: 'VT323', monospace;
+   font-size: 1.2rem;
+}
+
+
 %reset {
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
 
-%center {
+%center-element{
     margin:auto;
     width:auto;
+}
+
+%back-ground {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 $colors: (
@@ -20,8 +33,29 @@ $colors: (
     purple: purple
 );
 
+
+
 @each $key, $value in $colors{
     .item-#{$key} {
         background-color: $value;
     }
 }
+
+$cams: (
+ fhaz: -30deg,
+ mast: 30deg,
+ nav: 0deg,
+ rhaz: -180deg,
+ pan: -150deg,
+ chem: 150deg
+ 
+);
+
+@each $key, $value in $cams{
+    .move-#{$key} {
+          -webkit-transform: rotate($value);
+        -ms-transform: rotate($value);
+            transform: rotate($value);
+    }
+}
+

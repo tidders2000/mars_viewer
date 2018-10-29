@@ -21,44 +21,73 @@
 
   <div class="row">
 
-   <div class="col-md-3">
+   <div class="col-md-3 ">
     <div class="col-md-12">
-
-     <img src="Assets/images/curiosity2.png" alt="curiosity rover" />
-
+     <div class="curosity-picture">
+      <img src="Assets/images/curiosity2.png" alt="curiosity rover" />
+     </div>
     </div>
 
     <div class="col-md-12">
 
+     <div class="sol-field"><input type="text" id="sol" value="sol day" onchange="testy()" /></div>
+
+     <div class="col-md-12 cam-selector">
+      <div class="row">
+       <img src="Assets/images/fhaz.png" alt="fhaz selector" id="fhaz" />
+       <img src="Assets/images/nav.png" alt="nav selector" id="nav" />
+
+       <img src="Assets/images/mast.png" alt="mast selector" id="mast" />
+
+      </div>
+
+      <div class="row">
+
+       <img src="Assets/images/pan.png" alt="pan selector" id="pan" />
+       <img src="Assets/images/rhaz.png" alt="rhaz selector" id="rhaz" />
+       <img src="Assets/images/chem.png" alt="chem selector" id="chem" />
+      </div>
+     </div>
+    </div>
+    <div class="col-md-12 item-green mission-info">
+     <p class="info-heading">Mission Information</p>
+     <div class="col-md-12" id="info">
+
+      <p id="multi"></p>
+     </div>
+       
+    </div>
+  
+     <div class="col-md-12  mission-info">
+     
+      <span class='fas fa-info-circle'></span>
+      
+     <div id="instructions"></div>
     
     
-     <input type="text" id="sol" value="2000" onchange="testy()" />
-     <img src="Assets/images/cam_im.png" alt="camera selector lights" />
-     <img src="Assets/images/dial.png" alt="camera selector dial" />
-     <input type="text" id="cam" value="fhaz" />
-
-     <input type="submit" value="Submit" onclick="getData()">
-
-    </div>
-    <div class="col-md-12">
-   <div class="col-md-8 offset-2" id="info">
-    <p id="multi"></p>
-    </div>
     </div>
    </div>
 
    <div class="col-md-9">
-    <div class="col-md-12"> <img src="Assets/images/rust_text.png" alt="Mars Photo Viewer" /></div>
+    <div class="col-md-12 title"> <img src="Assets/images/rust_text.png" alt="Mars Photo Viewer" /></div>
     <div class="col-md-12">
-     <div class="tv"><img id="mars_pic" src="" /></div>
+     <div class="tv"><img id="mars_pic" src="Assets/images/tv-screen2.png" /></div>
     </div>
 
 
-    <div class="col-md-12">
-     <input type="image" src="Assets/images/button.png"id="decrease" onclick="down()" alt="load last image"/>
-     <img src="Assets/images/led.png" alt="leds"/>
-     <input type="image" src="Assets/images/button.png" id="increase" onclick="up()" alt="load next image"/>
-    </div>
+    <div class="col-md-6 offset-md-4 ">
+   
+     <!-- <input type="image" src="Assets/images/button.png" class="button" id="decrease" onclick="down()" alt="load last image" />-->
+     
+ <a href="#" class="btn" onclick="down()" >
+<i class="far fa-arrow-alt-circle-left"></i>
+</a>
+      <img src="Assets/images/led.png" alt="leds" />
+      
+ <a href="#" class="btn" onclick="up()">
+<i class="far fa-arrow-alt-circle-right"></i>
+</a>     </div>
+   
    </div>
   </div>
  </div>
@@ -71,14 +100,15 @@
 </body>
 <!--scripts-->
 <!--jquery-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!--jasmine frameowrk-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine-html.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/boot.js"></script>-->
 <!--load code base-->
 
-<script type="text/javascript" src="scripts/jscript/javascript.js"></script>
+<!--<script type="text/javascript" src="scripts/jscript/javascript.js"></script>-->
+<script type="text/javascript" src="scripts/jscript/jquery.js"></script>
 <!--load test scripts-->
 <script type="text/javascript" src="specs/calcspec.js"></script>
 </htnl>
