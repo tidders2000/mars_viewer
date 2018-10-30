@@ -16,7 +16,7 @@
     var landing = data.photo_manifest.landing_date;
     var total_pics = data.photo_manifest.total_photos;
     $("#info").append("max sol:" + max_sol + " status:" + status + "<br>Landing Date:" + landing + "</br> Total photos:" + total_pics)
-    $('#instructions').append("<p class='red'>Enter a sol Dayin the field above then press return</p>");
+    $('#instructions').append("<p class='red'>Enter a sol Day (no higher than the max sol in mission info) in the field above then press return</p>");
 
   }
   //this function is run when the user types in a sol  
@@ -49,19 +49,21 @@
       //sorts through cameras for the day and logs to console
       for (var x = 0; x < choice.photo_manifest.photos[pop].cameras.length; x++) {
         var cam_id = choice.photo_manifest.photos[pop].cameras[x];
-        $('#info').append(cam_id + "<br/>"); //change to display on screen
+        $('#info').append(cam_id + "-"); //change to display on screen
 
       }
 
       $("#info").append("<br/> Pictures for Day:" + pics_by_day)
       $('#instructions').empty()
-      $('#instructions').append("<p class='red'>click a cam button</p>");
+      $('#instructions').append("<p class='red'>Total photos for the day and avaiable cams are shown in mission info.click a cam button</p>");
 
     });
 
   }
 
 
+
+$('#pan,#mast,#fhaz,#rhaz,#nav,#chem').css( 'cursor', 'pointer' );
 
   var photo_holder = [];
   var c = 0;
@@ -158,7 +160,9 @@
   //move upwards through array of images
   function up() {
     if (photo_holder.length < 1) {
-      alert('select a sol and cam')
+        $('#instructions').empty()
+        $('#instructions').append("<p class='red'>Enter a sol Day in the field above then press return</p><p class='red'>select a sol and cam</p>")
+      
     }else if (c<photo_holder.length){
       c++;
       $('#mars_pic').attr('src', photo_holder[c])
@@ -210,4 +214,5 @@ $('#info').empty();
     $('#chem').attr("src", "Assets/images/chem.png")
     $('#nav').attr("src", "Assets/images/nav.png")
   }
+  
   
