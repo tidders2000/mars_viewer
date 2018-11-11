@@ -1,7 +1,8 @@
 body{
-    background-image: url("../Assets/images/alubg.jpg");
-    @extend %back-ground;
+    background-image: url("../Assets/images/line-alu.png");
+   background-position:left-top;
     background-size:auto;
+    background-repeat: repeat ;
     
 }
 .tv img{
@@ -28,6 +29,7 @@ body{
 
 .curiosty-picture{
     padding-top:20px;
+    
 }
 
 .cam-selector img{
@@ -73,6 +75,9 @@ body{
     font-weight:400;
     text-align: center;
 }
+
+
+
 
 .title img{
     padding-top:5px;

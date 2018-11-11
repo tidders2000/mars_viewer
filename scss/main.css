@@ -7,10 +7,6 @@
   margin: auto;
   width: auto; }
 
-body {
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .item-black {
   background-color: black; }
 
@@ -66,8 +62,10 @@ body {
   transform: rotate(150deg); }
 
 body {
-  background-image: url("../Assets/images/alubg.jpg");
-  background-size: auto; }
+  background-image: url("../Assets/images/line-alu.png");
+  background-position: left-top;
+  background-size: auto;
+  background-repeat: repeat; }
 
 .tv img {
   padding: none;
@@ -91,8 +89,7 @@ body {
 .sol-field input {
   margin-top: 10px;
   display: block;
-  text-align: center;
-  border-radius: 20px; }
+  text-align: center; }
 
 .mission-info {
   display: block;
