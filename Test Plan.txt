@@ -1,0 +1,34 @@
+Test plan - Jasmine
+
+
+Test manifest function -- All tests passed
+  populates manifest to div
+  Updates instructions
+
+Test Nancheck function -- All tests passed
+ Alert pops  up if text entered
+    
+
+Test reset lights function -- All tests passed
+    swap image with a new one
+ 
+
+ 
+Test Add page Image function -- All tests passed
+        moves photos into the array
+
+
+
+Test Function Up-- All tests passed
+ Triggers up function to run
+ 
+ Test Function Up-- All tests passed
+ Triggers down function to run
+ 
+ UAT Testing
+ Check instructions are correct
+ What happend when pressnig on 0 image or last image
+ What happend when pressing buttons out of sequence
+ What happens when changing requests halfway through
+ What happens when not a number is entered for sol
+
