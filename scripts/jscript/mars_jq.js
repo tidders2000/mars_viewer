@@ -234,6 +234,7 @@ function nancheck(number){
     else {
 
       picCounter = photo_holder.length
+       $('#instructions').append("<p class='red'>Max images reached for this cam select again</p>")
     }
   }
 
@@ -258,6 +259,7 @@ function nancheck(number){
 
       picCounter--;
       $('#info').empty();
+        $('#instructions').empty();
       $('#mars_pic').attr('src', photo_holder[picCounter])
       $("#info").append("photo number:" + picCounter + "/" + photo_holder.length) //align numbers
 

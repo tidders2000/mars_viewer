@@ -5,10 +5,16 @@ body{
     background-repeat: repeat ;
     
 }
+
+h1{
+    text-align:center;
+}
 .tv img{
     //background-image: url("../Assets/images/tv-screen2.png");
     padding:none;
    display:block;
+    width: 100%;
+  
   
    @extend %center-element;
    
@@ -25,7 +31,11 @@ body{
 .info{
     background-color:white;
     min-height:200px;
+     width: 100%;
+    height: auto;
 }
+
+
 
 .curiosty-picture{
     padding-top:20px;
@@ -47,6 +57,8 @@ body{
     display:block;
     @extend %center-element;
     text-align:center;
+     width: 100%;
+    height: auto;
     
 } 
 
@@ -61,7 +73,8 @@ body{
        border: 1px solid grey;
     color:#006400;
     @extend %computer-font;
-    
+     width: 100%;
+    height: auto;
    
 }
 
@@ -85,14 +98,21 @@ body{
     @extend %center-element;
     padding-bottom:20px;
 }
-
-
+.mars-title img {
+    padding-top:20px;
+    display:block;
+    @extend %center-element;
+    padding-bottom:20px;
+   
+}
 
 #mars_pic{
     width:800px;
     height:500px;
     border-radius:10px;
     margin-bottom:20px;
+     width: 100%;
+    
     
 }
 
@@ -150,3 +170,25 @@ input {
 :-moz-placeholder { color: #666; }
 ::-moz-placeholder { color: #666; }
 :-ms-input-placeholder { color: #666; }
+
+@media (max-width: 480px) {
+.btn {
+
+     margin-left:20%;
+    
+  }
+  .tv img {
+  padding-left:10px;
+ 
+    
+  }
+ .sol-field input{
+     margin-left:5px;
+ }
+}  
+
+@media (max-width: 770px){
+    .tv img{
+      margin-top:20px;
+    }
+}

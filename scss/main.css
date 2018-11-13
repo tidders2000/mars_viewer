@@ -3,7 +3,7 @@
   font-family: 'VT323', monospace;
   font-size: 1.2rem; }
 
-.tv img, .cam-selector img, .sol-field input, .title img {
+.tv img, .cam-selector img, .sol-field input, .title img, .mars-title img {
   margin: auto;
   width: auto; }
 
@@ -67,9 +67,13 @@ body {
   background-size: auto;
   background-repeat: repeat; }
 
+h1 {
+  text-align: center; }
+
 .tv img {
   padding: none;
-  display: block; }
+  display: block;
+  width: 100%; }
 
 #mars_pic {
   display: block;
@@ -77,7 +81,9 @@ body {
 
 .info {
   background-color: white;
-  min-height: 200px; }
+  min-height: 200px;
+  width: 100%;
+  height: auto; }
 
 .curiosty-picture {
   padding-top: 20px; }
@@ -89,7 +95,9 @@ body {
 .sol-field input {
   margin-top: 10px;
   display: block;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  height: auto; }
 
 .mission-info {
   display: block;
@@ -100,7 +108,9 @@ body {
   border-radius: 10px;
   box-shadow: 2px 1px grey;
   border: 1px solid grey;
-  color: #006400; }
+  color: #006400;
+  width: 100%;
+  height: auto; }
 
 .height-adj {
   min-height: 90px; }
@@ -114,11 +124,17 @@ body {
   display: block;
   padding-bottom: 20px; }
 
+.mars-title img {
+  padding-top: 20px;
+  display: block;
+  padding-bottom: 20px; }
+
 #mars_pic {
   width: 800px;
   height: 500px;
   border-radius: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
 
 .red {
   color: red;
@@ -176,5 +192,18 @@ input {
 
 :-ms-input-placeholder {
   color: #666; }
+
+@media (max-width: 480px) {
+  .btn {
+    margin-left: 20%; }
+
+  .tv img {
+    padding-left: 10px; }
+
+  .sol-field input {
+    margin-left: 5px; } }
+@media (max-width: 770px) {
+  .tv img {
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

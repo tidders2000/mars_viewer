@@ -21,18 +21,22 @@
 
   <div class="row">
 
-   <div class="col-md-4 ">
-    <div class="col-md-10 offset">
-     <div class="curosity-picture">
+   <div class="col-lg-4 col-sm-12">
+    <div class="col-xs-8 offset-xs-2 ">
+     <div class="col-md-12 title 	d-block d-sm-none ">
+      <h1>Mars Photos</h1>
+     </div>
+     <div class="col-xs-12 title d-none d-sm-block d-lg-none mars-title"> <img src="Assets/images/rust_text.png" alt="Mars Photo Viewer" /></div>
+     <div class="curosity-picture d-none d-lg-block ">
       <img src="Assets/images/curiosity2.png" alt="curiosity rover" />
      </div>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 ">
 
-     <div class="sol-field"><input type="text" id="sol" value="sol day" onchange="testy()"/></div>
+     <div class="sol-field"><input type="text" id="sol" value="sol day" onchange="testy()" /></div>
 
-     <div class="col-md-12 cam-selector">
+     <div class="col-md-12 cam-selector ">
       <div class="row">
        <img src="Assets/images/fhaz.png" alt="fhaz selector" id="fhaz" />
        <img src="Assets/images/nav.png" alt="nav selector" id="nav" />
@@ -49,45 +53,47 @@
       </div>
      </div>
     </div>
-    <div class="col-md-12 item-green mission-info">
+    <div class="col-md-12  item-green mission-info">
      <p class="info-heading">Mission Information</p>
      <div class="col-md-12" id="info">
 
       <p id="multi"></p>
      </div>
-       
+
     </div>
-  
-     <div class="col-md-12  mission-info height-adj">
-     
-      <span class='fas fa-info-circle'></span>
-      
+
+    <div class="col-md-12  mission-info height-adj">
+
+     <span class='fas fa-info-circle'></span>
+
      <div id="instructions"></div>
-    
-    
+
+
     </div>
    </div>
 
-   <div class="col-md-8">
-    <div class="col-md-12 title"> <img src="Assets/images/rust_text.png" alt="Mars Photo Viewer" /></div>
+   <div class="col-lg-8 col-sm-12">
+    <div class="col-md-12 title d-none d-lg-block"> <img src="Assets/images/rust_text.png" alt="Mars Photo Viewer" /></div>
     <div class="col-md-12">
      <div class="tv"><img id="mars_pic" src="Assets/images/tv-screen2.png" /></div>
     </div>
 
+    <div class="row">
+     <div class="col-md-6 offset-md-4 ">
 
-    <div class="col-md-6 offset-md-4 ">
-   
-     <!-- <input type="image" src="Assets/images/button.png" class="button" id="decrease" onclick="down()" alt="load last image" />-->
-     
- <a href="#" class="btn" id="down" onclick="down()" >
-<i class="far fa-arrow-alt-circle-left"></i>
-</a>
-      <img src="Assets/images/led.png" alt="leds" />
-      
- <a href="#" class="btn" id="up"onclick="up()">
-<i class="far fa-arrow-alt-circle-right"></i>
-</a>     </div>
-   
+      <!-- <input type="image" src="Assets/images/button.png" class="button" id="decrease" onclick="down()" alt="load last image" />-->
+
+      <a href="#" class="btn" id="down" onclick="down()">
+    <i class="far fa-arrow-alt-circle-left"></i>
+    </a>
+
+      <img src="Assets/images/led.png" class="d-none d-sm-inline" alt="leds" />
+
+      <a href="#" class="btn" id="up" onclick="up()">
+     <i class="far fa-arrow-alt-circle-right"></i>
+     </a>
+     </div>
+    </div>
    </div>
   </div>
  </div>
@@ -105,7 +111,7 @@
 
 
 <!--<script type="text/javascript" src="scripts/jscript/javascript.js"></script>-->
-<script type="text/javascript" src="scripts/jscript/jquery.js"></script>
+<script type="text/javascript" src="scripts/jscript/mars_jq.js"></script>
 
 <!--load test scripts-->
 <script type="text/javascript" src="specs/marsspec.js"></script>
