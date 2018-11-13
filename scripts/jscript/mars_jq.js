@@ -130,7 +130,7 @@ function nancheck(number){
 
     reset_light()
 
-    $('#mast').attr("src", "Assets/images/pan-yellow.png");
+    $('#mast').attr("src", "Assets/images/mast-yellow.png");
     var cam = 'mast'
     getData(cam)
   })
@@ -139,7 +139,7 @@ function nancheck(number){
   $("#nav").click(function() {
     reset_light()
 
-    $('#nav').attr("src", "Assets/images/pan-yellow.png");
+    $('#nav').attr("src", "Assets/images/nav-yellow.png");
     var cam = 'navcam'
     getData(cam)
   })
@@ -147,7 +147,7 @@ function nancheck(number){
   $("#fhaz").click(function() {
     reset_light()
 
-    $('#fhaz').attr("src", "Assets/images/pan-yellow.png");
+    $('#fhaz').attr("src", "Assets/images/fhaz-yellow.png");
     var cam = 'fhaz'
     getData(cam)
   })
@@ -155,7 +155,7 @@ function nancheck(number){
   $("#rhaz").click(function() {
 
     reset_light()
-    $('#rhaz').attr("src", "Assets/images/pan-yellow.png");
+    $('#rhaz').attr("src", "Assets/images/rhaz-yellow.png");
     var cam = 'rhaz'
     getData(cam)
   })
@@ -163,7 +163,7 @@ function nancheck(number){
   $("#chem").click(function() {
     reset_light()
 
-    $('#chem').attr("src", "Assets/images/pan-yellow.png");
+    $('#chem').attr("src", "Assets/images/chem-yellow.png");
     var cam = 'chemcam'
     getData(cam)
   })
